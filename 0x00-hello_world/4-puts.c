@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main description - prints out stdout
+ *main description: prints out stdout
  *
  *Return: 0
  */
