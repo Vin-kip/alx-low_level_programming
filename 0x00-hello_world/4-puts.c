@@ -2,7 +2,7 @@
 /**
  *main description - prints out stdout
  *
- *Return void
+ *Return: 0
  */
 int main(void)
 {
