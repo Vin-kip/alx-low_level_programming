@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- *Description: main block prints out stdout
+ *Description: main block
+ *main: prints out stdout
  *Return: 0
  */
 int main(void)
