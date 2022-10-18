@@ -13,9 +13,7 @@
 int main(void)
 
 {
-int n;
-
-int lastDigit;
+int n, lastDigit;
 
 srand(time(0));
 
