@@ -9,31 +9,40 @@
 * Description: print the last digit
 * Return: 0
 **/
-
 int main(void)
 
 {
-int n, lastDigit;
+
+int n, lastd;
 
 srand(time(0));
 
 n = rand() - RAND_MAX / 2;
 
-lastDigit = n % 10;
+lastd = n % 10;
 
-printf("Last digit of %d is %d and is ", n, lastDigit);
+if (lastd > 5)
 
-if (lastDigit > 5)
+{
 
-printf("greater than 5\n");
+printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
 
-else if (lastDigit == 0)
+}
 
-printf("0\n");
+else if (lastd == 0)
 
-else
+{
 
-printf("less than 6 but not 0\n");
+printf("Last digit of %d is %d and is 0\n", n, lastd);
+
+}
+
+else if (lastd < 6 && lastd != 0)
+{
+
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
+
+}
 
 return (0);
 
