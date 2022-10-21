@@ -2,9 +2,7 @@
 
 /**
 * main - Fizz Buzz Test
-* Description: print Fizz for multiples of 3
-* and Buzz for multiples of 5
-* and FizzBuzz for multiples of both
+* Description: print Fizz for multiples of 3 and Buzz for multiples of 5
 * Return: 0 (success)
 */
 
@@ -23,19 +21,14 @@ for (i = 2; i <= 100; i++)
 {
 
 printf(" ");
-
 												if (i % 3 == 0 || i % 5 == 0)
-
 {
-
 if (i % 3 == 0)
-
 												printf("Fizz");
 
 if (i % 5 == 0)
 
 printf("Buzz");
-
 												}
 
 else
