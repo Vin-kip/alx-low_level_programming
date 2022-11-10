@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 
 char *newstr, *temp;
 
-unsigned int size, size1 = 0, size2 = 0, i = 0;
+unsigned int size, size1 = 0, size2 = 0;
 
 if (!s1)
 
