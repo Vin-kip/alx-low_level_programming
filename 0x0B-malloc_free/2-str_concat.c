@@ -53,9 +53,6 @@ while (*s1)
 *temp++ = *s1++;
 
 while (*s2)
-
 *temp++ = *s2++;
-
 return (newstr);
-
 }
