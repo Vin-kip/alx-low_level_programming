@@ -43,15 +43,10 @@ size = size1 + size2 - 1;
 newstr = malloc(size *sizeof(char));
 
 if (!newstr)
-
 return (NULL);
-
 temp = newstr;
-
 while (*s1)
-
 *temp++ = *s1++;
-
 while (*s2)
 *temp++ = *s2++;
 return (newstr);
