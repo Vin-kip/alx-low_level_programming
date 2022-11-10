@@ -23,7 +23,8 @@ if (!str)
 return (NULL);
 }
 
-while (*(str + size++));
+while (*(str + size++))
+;
 
 newstr = malloc(size * sizeof(char));
 
