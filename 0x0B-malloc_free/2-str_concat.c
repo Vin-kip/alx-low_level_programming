@@ -40,7 +40,7 @@ while (*(s2 + size2++))
 
 size = size1 + size2 - 1;
 
-newstr = malloc(size * sizeof(char));
+newstr = malloc(size *sizeof(char));
 
 if (!newstr)
 
