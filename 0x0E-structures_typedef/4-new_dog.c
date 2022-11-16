@@ -1,5 +1,4 @@
 #include <stdlib.h>
-
 #include "dog.h"
 
 /**
@@ -13,37 +12,36 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 int name_ln = 0, owner_ln = 0, c;
-dog_t *doge;
-
+dog_t *dogs;
 while (name[name_ln] != '\0')
 name_ln++;
 while (owner[owner_ln] != '\0')
 owner_ln++;
-doge = malloc(sizeof(dog_t));
-if (doge == NULL)
+dogs = malloc(sizeof(dog_t));
+if (dogs == NULL)
 {
-free(doge);
+free(dogs);
 return (NULL);
 }
-doge->name = malloc(name_ln * sizeof(doge->name));
-if (doge->name == NULL)
+dogs->name = malloc(name_ln * sizeof(dogs->name));
+if (dogs->name == NULL)
 {
-free(doge->name);
-free(doge);
+free(dogs->name);
+free(dogs);
 return (NULL);
 }
 for (c = 0; c <= name_ln; c++)
-doge->name[c] = name[c];
-doge->age = age;
-doge->owner = malloc(owner_ln * sizeof(doge->owner));
-if (doge->owner == NULL)
+dogs->name[c] = name[c];
+dogs->age = age;
+dogs->owner = malloc(owner_ln * sizeof(dogs->owner));
+if (dogs->owner == NULL)
 {
-free(doge->owner);
-free(doge->name);
-free(doge);
+free(dogs->owner);
+free(dogs->name);
+free(dogs);
 return (NULL);
 }
 for (c = 0; c <= owner_ln; c++)
-doge->owner[c] = owner[c];
-return (doge);
+dogs->owner[c] = owner[c];
+return (dogs);
 }
